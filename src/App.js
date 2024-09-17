@@ -1,13 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import First from './componants/First.js'; //importing First from componants folder
+import Welcome from './componants/Welcome.js'; //importing First from componants folder
+import Display from './componants/Display.js'; 
 
 function App() {
+  let owner = "Leo's";  /* owner has the string "Leo"*/ 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+         This is {owner} first react app {/*using the JS  variable of owner in the html tags with curly brackets to impliment the string above into my html code so it will display on the App*/}
         </p>
         <a
           className="App-link"
@@ -17,6 +21,9 @@ function App() {
         >
           Learn React
         </a>
+        <First/> {/*calling the code in the First.js file so it will display on the App*/}
+        <Welcome/>
+        <Display/>
       </header>
     </div>
   );
