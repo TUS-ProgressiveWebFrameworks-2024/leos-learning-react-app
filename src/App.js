@@ -6,6 +6,8 @@ import Display from './componants/Display.js';
 import Grade from './componants/Grade.js'; 
 import Population from './componants/Population.js'; 
 import Day from './componants/Day.js'; 
+import Practice from './componants/Practice.js'; 
+
 
 function App() {
   let owner = "Leo's";  /* owner has the string "Leo"*/ 
@@ -35,6 +37,7 @@ function App() {
         <Population country = {"Ireland"} pop = {"5 million"}/>
         <Population country = {"France"} pop = {"60 million"}/>
         <Day short = {false}/>
+        <Practice/>
       </header>
     </div>
   );
